@@ -20,7 +20,47 @@ aside {
     flex-wrap: wrap;
     flex-direction: column;
     width: 155px;
+    padding: 32px 0 32px 55px;
+    position: relative;
+
 }
+
+.asideLinks {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 270px;
+    min-width: 270px;
+    position: absolute;
+    padding-left: 80px;
+    transform: rotate(270deg);
+    top: 470px;
+    gap: 40px;
+    left: -32px;
+}
+
+.asideLinks::before {
+    content: '';
+    background: #303030;
+    height: 1px;
+    width: 60px;
+    top: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 60px;
+}
+
+.asideLinks a {
+    /* transform: rotate(270deg); */
+    font-size: 11px;
+    font-weight: 600;
+    color: #303030;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6C00;
+}
+
 
 nav {
     position: absolute;
@@ -66,10 +106,6 @@ button {
     text-transform: uppercase;
     margin-left: 30px;
     cursor: pointer;
-}
-
-button:hover {
-    background: green;
 }
 
 main {
@@ -136,4 +172,41 @@ main span::before {
 .aboutTextSection {
     flex-direction: column;
     justify-content: center;
+}
+
+.logoImage {
+    width: 68.93px;
+    height: 55.46px;
+}
+
+#barbers {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.boxesContainer {
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.boxItem {
+    background: #F7F7F7;
+    padding: 20px;
+    width: 170px;
+}
+
+.boxColumn {
+    gap: 40px;
+    flex-direction: column;
+    width: calc(50% - 20px);
+}
+
+.boxColumn:last-child {
+    margin-top: 60px;
+}
+
+.barberTextSection {
+    width: 480px;
+    flex-direction: column;
 }
