@@ -1,3 +1,11 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: rgba(77, 90, 229, 1);
+}
+
 #popup {
     width: 408px;
     height: 584px;
@@ -32,7 +40,6 @@ form {
 
 .inputTextLabel {
     color: #8E8F99;
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
@@ -46,6 +53,18 @@ form {
     outline: none;
     border: 1px solid #8E8F99;
     padding: 0 15px 0 38px;
+}
+
+.labelContainer textarea {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 8px 16px;
+    height: 120px;
+    width: 360px;
+    max-width: 360px;
+    max-height: 120px;
+    min-height: 120px;
+    min-width: 360px;
 }
 
 .inputSVG {
@@ -78,4 +97,48 @@ label[for="inputPrivacy"] .inputTextLabel {
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+#closePopup {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid #0000001A;
+    margin-left: auto;
+    display: block;
+}
+
+.popupTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+
+input:focus+.inputSVG svg path {
+    fill: #4D5AE5;
+}
+
+input:focus {
+    border-color: #4D5AE5;
+}
+
+label[for="commentTextarea"] .inputTextLabel {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.labelContainer:last-of-type {
+    margin-bottom: 24px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid rgba(77, 90, 229, 1);
 }
